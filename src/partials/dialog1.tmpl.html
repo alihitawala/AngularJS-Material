@@ -1,0 +1,25 @@
+<md-dialog aria-label="Mango (Fruit)">
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Contact Card</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="answer('not applicable')">
+                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content style="min-width: 400px; max-width:800px;max-height:810px; ">
+            <i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Ali Hussain Hitawala<br><br>
+            <i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;+91-7406310592<br><br>
+            <i class="fa fa-envelope-o">&nbsp;&nbsp;&nbsp;alihitawala@cs.wisc.edu</i><br><br>
+            <i class="fa fa-map-marker">&nbsp;&nbsp;&nbsp;2110 University Avenue, Madison, WI-53726</i><br><br>
+        </md-dialog-content>
+        <div class="md-actions" layout="row">
+            <span flex></span>
+            <md-button ng-click="answer('useful')" style="margin-right:20px;">
+                Got it!
+            </md-button>
+        </div>
+    </form>
+</md-dialog>

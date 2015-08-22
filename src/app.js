@@ -24,8 +24,9 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
 
     };
     $scope.title1 = "Home";
-    $scope.title2 = "Experience";
-    $scope.title3 = "Project";
+    $scope.title2 = "Education";
+    $scope.title3 = "Work Experience";
+    $scope.title4 = "Projects";
 
     $scope.go = function ( path ) {
         $location.path( path );
