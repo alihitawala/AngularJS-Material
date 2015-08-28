@@ -20,10 +20,18 @@ myControllers.controller('HomeController', ['$scope', '$mdDialog', function($sco
     };
 }]);
 
+myControllers.controller('EducationController', ['$scope', function($scope){
+    $scope.title = "Education";
+}]);
+
 myControllers.controller('ExperienceController', ['$scope', function($scope){
     $scope.title = "Experience";
 }]);
 function DialogController($scope, $mdDialog) {
+    $scope.name = "Ali Hussain Hitawala";
+    $scope.phone = "+91-7406310592";
+    $scope.email = "alihitawala@cs.wisc.edu";
+    $scope.address = "2110, University Avenue, Madison, WI - 53726";
     $scope.hide = function() {
         $mdDialog.hide();
     };

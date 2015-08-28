@@ -9,6 +9,10 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/home.html',
                 controller: 'HomeController'
             }).
+            when('/Education', {
+                templateUrl: 'partials/education.html',
+                controller: 'EducationController'
+            }).
             when('/Experience', {
                 templateUrl: 'partials/experience.html',
                 controller: 'ExperienceController'
@@ -31,4 +35,15 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
     $scope.go = function ( path ) {
         $location.path( path );
     };
+    $scope.goto = function(link) {
+        if (link == 'wisc') {
+            window.open('http://www.wisc.edu','_blank');
+        }
+        else if (link == 'mnnit') {
+            window.open('http://www.mnnit.ac.in','_blank');
+        }
+        else if (link == 'iiit') {
+            window.open('https://www.iiit.ac.in/','_blank');
+        }
+    }
 }]);
