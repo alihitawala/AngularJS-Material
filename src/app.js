@@ -45,5 +45,11 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
         else if (link == 'iiit') {
             window.open('https://www.iiit.ac.in/','_blank');
         }
+        else if (link == 'git-collection') {
+            window.open('https://github.com/goldmansachs/gs-collections','_blank');
+        }
+        else if (link == 'playStore-impact') {
+            window.open('https://play.google.com/store/apps/details?id=com.goldmansachs.impact.hcmapp','_blank');
+        }
     }
 }]);

@@ -1,3 +1,37 @@
 <div>
-    This is {{title}}.
+    <md-content class="md-padding">
+
+        <md-card>
+            <md-card-content>
+                <h2>Goldman Sachs, Bangalore</h2>
+                <p>Programmer Analyst II</p>
+                <p>June 2012 - July 2015</p>
+                <ul>
+                    <li>Open source contribution to a Java collection management library called GS-Collections.
+                        <md-button class="md-raised md-primary" ng-click="goto('git-collection')">GitHub</md-button></li>
+                    <li>Build a web application on Service Oriented Architecture. The application deals with all the hiring, quartiling, promotions, and involuntary termination process of an employee.</li>
+                    <li>Worked on GS-GLUI – a declarative JDK and XML-based framework for building portable and reusable Graphical User Interface (GUI) for applications.</li>
+                    <li>Worked on Android mobile application development for a campus app called ‘Impact’. It is the first ever public-facing Android application from GS.
+                        <md-button class="md-raised md-primary" ng-click="goto('playStore-impact')"> Google Play Store</md-button></li>
+                </ul></p>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="end center">
+                <md-button ng-click="goto('wisc')">Website</md-button>
+            </div>
+        </md-card>
+        <br/>
+        <md-card>
+            <md-card-content>
+                <h2>Cisco Systems, Bangalore</h2>
+                <p>Internship</p>
+                <p>May 2011 - July 2011</p>
+                <ul>
+                    <li>To build an automated IPv6-Tool for conversion of IPv4 Cisco IOS configuration into equivalent IPv6 configuration.</li>
+                </ul>
+            </md-card-content>
+            <div class="md-actions" layout="row" layout-align="end center">
+                <md-button ng-click="goto('mnnit')">Website</md-button>
+            </div>
+        </md-card>
+    </md-content>
 </div>
