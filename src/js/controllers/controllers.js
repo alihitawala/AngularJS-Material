@@ -27,9 +27,12 @@ myControllers.controller('EducationController', ['$scope', function($scope){
 myControllers.controller('ExperienceController', ['$scope', function($scope){
     $scope.title = "Experience";
 }]);
+myControllers.controller('OtherExperienceController', ['$scope', function($scope){
+    $scope.title = "Other Experience";
+}]);
 function DialogController($scope, $mdDialog) {
     $scope.name = "Ali Hussain Hitawala";
-    $scope.phone = "+91-7406310592";
+    $scope.phone = "+1 608-609-7432";
     $scope.email = "alihitawala@cs.wisc.edu";
     $scope.address = "2110, University Avenue, Madison, WI - 53726";
     $scope.hide = function() {

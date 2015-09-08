@@ -17,6 +17,10 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/experience.html',
                 controller: 'ExperienceController'
             }).
+            when('/OtherExperience', {
+                templateUrl: 'partials/other-experience.html',
+                controller: 'OtherExperienceController'
+            }).
             otherwise({
                 redirectTo: '/Home'
             });
@@ -31,6 +35,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
     $scope.title2 = "Education";
     $scope.title3 = "Work Experience";
     $scope.title4 = "Projects";
+    $scope.title5 = "Other Experience";
 
     $scope.go = function ( path ) {
         $location.path( path );
@@ -50,6 +55,9 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
         }
         else if (link == 'playStore-impact') {
             window.open('https://play.google.com/store/apps/details?id=com.goldmansachs.impact.hcmapp','_blank');
+        }
+        else if (link == 'playStore-money') {
+            window.open('https://play.google.com/store/apps/details?id=com.developer.nita.hisabKitab','_blank');
         }
     }
 }]);
