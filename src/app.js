@@ -21,6 +21,10 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/other-experience.html',
                 controller: 'OtherExperienceController'
             }).
+            when('/Awards', {
+                templateUrl: 'partials/awards.html',
+                controller: 'AwardsController'
+            }).
             otherwise({
                 redirectTo: '/Home'
             });
@@ -34,7 +38,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
     $scope.title1 = "Home";
     $scope.title2 = "Education";
     $scope.title3 = "Work Experience";
-    $scope.title4 = "Projects";
+    $scope.title4 = "Honors & Awards";
     $scope.title5 = "Other Experience";
 
     $scope.go = function ( path ) {
@@ -58,6 +62,12 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
         }
         else if (link == 'playStore-money') {
             window.open('https://play.google.com/store/apps/details?id=com.developer.nita.hisabKitab','_blank');
+        }
+        else if (link == 'linkedIn') {
+            window.open('https://www.linkedin.com/in/alihitawala','_blank');
+        }
+        else if (link == 'github') {
+            window.open('https://github.com/alihitawala','_blank');
         }
     }
 }]);

@@ -4,6 +4,7 @@
 var myControllers = angular.module('Controllers', ['ngMaterial']);
 myControllers.controller('HomeController', ['$scope', '$mdDialog', function($scope, $mdDialog){
     $scope.title = "Home";
+    $scope.imagePath = "./img/profile.jpg";
     $scope.showAdvanced = function(ev) {
         $mdDialog.show({
             controller: DialogController,
@@ -29,6 +30,9 @@ myControllers.controller('ExperienceController', ['$scope', function($scope){
 }]);
 myControllers.controller('OtherExperienceController', ['$scope', function($scope){
     $scope.title = "Other Experience";
+}]);
+myControllers.controller('AwardsController', ['$scope', function($scope){
+    $scope.title = "Awards";
 }]);
 function DialogController($scope, $mdDialog) {
     $scope.name = "Ali Hussain Hitawala";
