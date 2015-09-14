@@ -21,7 +21,7 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/other-experience.html',
                 controller: 'OtherExperienceController'
             }).
-            when('/Awards', {
+            when('/Skills-Accomplishments', {
                 templateUrl: 'partials/awards.html',
                 controller: 'AwardsController'
             }).
@@ -42,9 +42,8 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
     $scope.title1 = "Home";
     $scope.title2 = "Education";
     $scope.title3 = "Work Experience";
-    $scope.title4 = "Honors & Awards";
+    $scope.title4 = "Skills/Accomplishments";
     $scope.title5 = "Other Experience";
-    $scope.title6 = "Technical Skills";
 
     $scope.go = function ( path ) {
         $location.path( path );
