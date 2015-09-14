@@ -34,6 +34,9 @@ myControllers.controller('OtherExperienceController', ['$scope', function($scope
 myControllers.controller('AwardsController', ['$scope', function($scope){
     $scope.title = "Awards";
 }]);
+myControllers.controller('SkillsController', ['$scope', function($scope){
+    $scope.title = "Skills";
+}]);
 function DialogController($scope, $mdDialog) {
     $scope.name = "Ali Hussain Hitawala";
     $scope.phone = "+1 608-609-7432";

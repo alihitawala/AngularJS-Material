@@ -25,6 +25,10 @@ app.config(['$routeProvider',
                 templateUrl: 'partials/awards.html',
                 controller: 'AwardsController'
             }).
+            when('/Skills', {
+                templateUrl: 'partials/skills.html',
+                controller: 'SkillsController'
+            }).
             otherwise({
                 redirectTo: '/Home'
             });
@@ -40,6 +44,7 @@ app.controller('AppCtrl', ['$scope', '$mdSidenav', '$location', function($scope,
     $scope.title3 = "Work Experience";
     $scope.title4 = "Honors & Awards";
     $scope.title5 = "Other Experience";
+    $scope.title6 = "Technical Skills";
 
     $scope.go = function ( path ) {
         $location.path( path );
